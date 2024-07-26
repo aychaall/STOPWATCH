@@ -31,7 +31,7 @@ function App() {
           {("0"+Math.floor((time/10)%100)).slice(-2)}
         </span>
       </div>
-      <div className=" w-1/3 max-w-sm flex flex-row justify-evenly">
+      <div className=" w-1/3 max-w-sm flex flex-row justify-even">
         {running? ( <button className="border rounded py-1 px-3.5" onClick={()=>{setRunning(false)}}>Stop</button>)
         :
         (  <button className="border rounded py-1 px-3" onClick={()=>{setRunning(true )}}>Start</button>)}
